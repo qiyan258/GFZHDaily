@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
     
-    
+    self.window.rootViewController = homeVC;
     
     [self.window makeKeyAndVisible];
     
